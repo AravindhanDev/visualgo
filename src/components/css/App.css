@@ -1,0 +1,82 @@
+body {
+	cursor: pointer;
+}
+
+.bars div {
+	display: block;
+	background: #1565c0;
+	color: #fff;
+	width: 6px;
+}
+
+.bars div:hover {
+	background: #06113c !important;
+}
+
+.bars {
+	height: 89vh;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+button {
+	white-space: nowrap;
+	font-size: 0.8rem !important;
+	min-width: 150px !important;
+}
+
+.stack {
+	display: flex;
+	overflow-x: scroll;
+}
+
+.stack button {
+	margin-right: 1rem;
+}
+
+.emoji {
+	color: rgba(170, 164, 146, 0.2) !important;
+	z-index: 999;
+	position: absolute;
+	top: 17%;
+	left: 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.emoji svg {
+	width: 50%;
+	height: 50%;
+}
+
+::-webkit-scrollbar {
+	height: 0;
+}
+
+footer button {
+	font-size: 0.6rem !important;
+	font-weight: 700 !important;
+}
+
+@media (max-width: 500px) {
+	.emoji svg {
+		width: 30%;
+		height: 30%;
+	}
+	.emoji {
+		position: absolute;
+		top: 15%;
+		left: -13%;
+	}
+	::-webkit-scrollbar {
+		height: 0 !important;
+	}
+	.bars {
+		height: 86vh;
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+	}
+}
